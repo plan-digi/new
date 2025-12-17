@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>DACH Eve Holidays — Alpine & City Adventures</title>
+<meta name="description" content="Explore Germany, Austria, and Switzerland with DACH Eve Holidays. We offer curated tours of the Alps, historic cities, and cultural landmarks." />
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="assets/css/style.css" />
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "DACH Eve Holidays", "url": "https://example.com/", "potentialAction": {"@type": "SearchAction", "target": "https://example.com/search?q={query}", "query-input": "required name=query"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "DACH Eve Holidays", "url": "https://example.com/", "logo": "https://example.com/assets/img/favicon.svg", "sameAs": []}</script>
+<style>
+  /* Age Verification Modal Styles */
+  .age-verify-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(251, 254, 252, 0.323); /* Light overlay from --bg */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    color: var(--ink); /* Dark text color */
+  }
+  .age-verify-content {
+    background-color: var(--panel); /* Light panel color */
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    max-width: 450px;
+    width: 90%;
+    text-align: center;
+    padding: 2rem;
+  }
+  .age-verify-content h2 {
+    color: var(--ink);
+    margin-top: 0;
+  }
+  .age-verify-buttons {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  /* Big Banner Styles */
+  .hero-banner {
+    position: relative;
+    padding: 20rem 1.25rem; /* 192px top/bottom, 20px left/right */
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+  }
+  .hero-banner::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+    z-index: 1;
+  }
+  .hero-banner .container { position: relative; z-index: 2; }
+  .hero-banner .title {
+    font-size: clamp(2.5rem, 5vw, 3.5rem); /* Larger, responsive font size */
+    margin-bottom: 0.75rem;
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header" role="banner">
+  <div class="container nav-wrap">
+    <div class="brand">
+      <img src="assets/img/logo.svg" alt="DACH Eve Holidays text logo" class="logo" style="width:140px;height:auto;" />
+      <span class="brand-name">DACH Eve Holidays</span>
+    </div>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" class="nav" role="navigation" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/spring.html">Alpine Tours</a></li>
+        <li><a href="pages/summer.html">City Breaks</a></li>
+        <li><a href="pages/autumn.html">Cultural Trips</a></li>
+        <li class="more">
+          <button class="more-btn" aria-haspopup="true" aria-expanded="false" aria-controls="destinations-menu">Destinations</button>
+          <ul id="destinations-menu" class="dropdown">
+            <li><a href="pages/germany.html">Germany</a></li>
+            <li><a href="pages/austria.html">Austria</a></li>
+            <li><a href="pages/switzerland.html">Switzerland</a></li>
+          </ul>
+        </li>
+        <li class="more">
+          <button class="more-btn" aria-haspopup="true" aria-expanded="false" aria-controls="more-menu">More</button>
+          <ul id="more-menu" class="dropdown">
+            <li><a href="pages/blog.html">Blog</a></li>
+            <li><a href="pages/about.html">About Us</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+
+<!-- 
+  To add your own banner image, replace 'assets/img/image.png' below.
+  A good size for the image would be around 1920x1080 pixels.
+-->
+<section 
+  class="hero-banner" 
+  aria-label="Scenic view of the DACH region"
+  style="background-image: url('assets/img/image\ \(11\).png');"
+>
+  <div class="container">
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="kicker" style="text-align: center;">Featured Adventures</h2>
+    <ul class="grid cols-3 plain">
+      <li><article class="card">
+        <div class="cover">
+          <img src="assets/img/rakotzbrucke.jpg" alt="A majestic mountain range in the Swiss Alps" style="width:100%;height:auto;border-radius:6px;" />
+        </div>
+        <div class="pad">
+          <h3>Alpine Adventures</h3>
+          <p>Hike, ski, and explore the breathtaking landscapes of the Alps across all three countries.</p>
+          <p><a href="pages/spring.html" aria-label="Explore Alpine Adventures">Explore →</a></p>
+        </div>
+      </article></li>
+      <li><article class="card">
+        <div class="cover">
+          <img src="assets/img/autumn-forest.jpg" alt="The historic city center of Vienna, Austria" style="width:100%;height:auto;border-radius:6px;" />
+        </div>
+        <div class="pad">
+          <h3>Imperial Cities</h3>
+          <p>Discover the rich history, art, and culture of Vienna, Berlin, Zurich, and Munich.</p>
+          <p><a href="pages/summer.html" aria-label="Explore Imperial Cities">Explore →</a></p>
+        </div>
+      </article></li>
+      <li><article class="card">
+        <div class="cover">
+          <img src="assets/img/summer-lake.jpg" alt="A fairytale castle, like Neuschwanstein, in Bavaria, Germany" style="width:100%;height:auto;border-radius:6px;" />
+        </div>
+        <div class="pad">
+          <h3>Fairytale Castles</h3>
+          <p>Journey through time and visit the enchanting castles of Germany and Austria.</p>
+          <p><a href="pages/autumn.html" aria-label="Explore Fairytale Castles">Explore →</a></p>
+        </div>
+      </article></li>
+      <li><article class="card">
+        <div class="cover">
+          <img src="assets/img/quedlinburg.jpg" alt="A scenic river cruise boat on the Danube or Rhine" style="width:100%;height:auto;border-radius:6px;" />
+        </div>
+        <div class="pad">
+          <h3>Scenic River Cruises</h3>
+          <p>Relax and watch the stunning scenery unfold on a luxury cruise along the Rhine or Danube.</p>
+          <p><a href="pages/contact.html" aria-label="Explore Scenic River Cruises">Explore →</a></p>
+        </div>
+      </article></li>
+      <li><article class="card">
+        <div class="cover">
+          <img src="assets/img/monschau.jpg" alt="A traditional Christmas market in a German town square" style="width:100%;height:auto;border-radius:6px;" />
+        </div>
+        <div class="pad">
+          <h3>Christmas Markets</h3>
+          <p>Experience the magic of traditional Christmas markets in December, a festive highlight.</p>
+          <p><a href="pages/contact.html" aria-label="Explore Christmas Markets">Explore →</a></p>
+        </div>
+      </article></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section ad-section">
+  <div class="container">
+    <div class="ad-placeholder">
+      <p>Advertisement Placeholder (e.g., 728x90)</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="kicker" style="text-align: center;">Why Travel With Us?</h2>
+    <div class="grid cols-3">
+      <div class="feature-item">
+        <div class="icon" aria-hidden="true">🗺️</div>
+        <h3>Local Guides</h3>
+        <p>Our passionate guides are locals who bring the history, culture, and hidden gems of the region to life.</p>
+      </div>
+      <div class="feature-item">
+        <div class="icon" aria-hidden="true">⭐</div>
+        <h3>Curated Experiences</h3>
+        <p>We hand-pick the best hotels, restaurants, and experiences to ensure a seamless and unforgettable journey.</p>
+      </div>
+      <div class="feature-item">
+        <div class="icon" aria-hidden="true">🧑‍🤝‍🧑</div>
+        <h3>Small Groups</h3>
+        <p>Enjoy a more personal and flexible experience with our small group tours, allowing for deeper immersion.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="spotlight-grid">
+      <div class="spotlight-image">
+        <img src="assets/img/spotlight-eco-travel.jpg" alt="A train winding through a scenic Swiss mountain pass" style="aspect-ratio: 4/3;">
+      </div>
+      <div class="spotlight-content">
+        <h2 class="kicker">In the Spotlight</h2>
+        <h3>Scenic Train Journeys</h3>
+        <p>Experience some of the world's most spectacular train rides, like the Bernina Express or Glacier Express, as they carve through the heart of the Swiss Alps, offering unparalleled views of mountains, glaciers, and valleys.</p>
+        <a href="pages/spring.html" class="btn secondary" style="margin-top: 12px;">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="kicker" style="text-align: center;">Join Our Community</h2>
+    <div class="grid cols-3">
+      <div class="feature-item">
+        <div class="icon" aria-hidden="true">✈️</div>
+        <h3>Travel with Us</h3>
+        <p>The best way to experience the DACH region is to join us on an unforgettable adventure.</p>
+      </div>
+      <div class="feature-item">
+        <div class="icon" aria-hidden="true">✍️</div>
+        <h3>Share Your Story</h3>
+        <p>Inspire others by sharing your travel stories and photos from your trip with us.</p>
+      </div>
+      <div class="feature-item">
+        <div class="icon" aria-hidden="true">📸</div>
+        <h3>Tag Us</h3>
+        <p>Tag us in your photos with #DACHEveHolidays to be featured and spread the word.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="kicker" style="text-align: center;">What Our Travelers Say</h2>
+    <div class="grid cols-3">
+      <div class="testimonial-card">
+        <p>"The Alpine tour with DACH Eve Holidays was breathtaking. Our guide knew all the best spots for photos and the most charming villages. A trip of a lifetime!"</p>
+        <div class="author">- Sarah L., Adventurer</div>
+      </div>
+      <div class="testimonial-card">
+        <p>"I loved the Vienna & Salzburg city break. DACH Eve Holidays handled everything perfectly, from the hotels to the concert tickets. It was so seamless."</p>
+        <div class="author">- Michael B., Culture Enthusiast</div>
+      </div>
+      <div class="testimonial-card">
+        <p>"Our family trip to see the German castles was magical. The kids were enchanted, and the adults were impressed by the flawless organization."</p>
+        <div class="author">- The Chen Family, Travelers</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section cta-section">
+  <div class="container">
+    <div class="cta-content">
+      <h2>Stay Connected</h2>
+      <p>Join our newsletter for travel inspiration, new tour announcements, and exclusive offers for your next European adventure.</p>
+      <form class="newsletter" onsubmit="return window.fakeSubmit(event)">
+        <label class="sr-only" for="news_main">Email</label>
+        <input id="news_main" type="email" placeholder="Your email address" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer" role="contentinfo">
+  <div class="container footer-grid">
+    <section>
+      <h3>About DACH Eve Holidays</h3>
+      <p>Your expert guide to curated holiday tours and adventures in Germany, Austria, and Switzerland.</p>
+    </section>
+    <section>
+      <h3>Quick Links</h3>
+      <ul class="plain">
+        <li><a href="pages/privacy.html">Privacy</a></li>
+        <li><a href="pages/disclaimer.html">Disclaimer</a></li>
+      </ul>
+    </section>
+    <section>
+      <h3>Newsletter</h3>
+      <form class="newsletter" onsubmit="return window.fakeSubmit(event)">
+        <label for="news" class="sr-only">Email</label>
+        <input id="news" type="email" placeholder="Your email" required />
+        <button type="submit">Subscribe</button>
+        <p class="form-note">Get travel tips and special offers.</p>
+      </form>
+    </section>
+  </div>
+  <div class="container copy"><p>© 2025 DACH Eve Holidays.</p></div>
+</footer>
+
+<!-- Age Verification Modal -->
+<div id="age-verification-modal" class="age-verify-overlay" role="dialog" aria-modal="true" aria-labelledby="age-verify-title">
+  <div class="age-verify-content" role="document">
+    <h2 id="age-verify-title">Age Verification</h2>
+    <p>You must be 18 years or older to enter this website.</p>
+    <p>Please confirm your age.</p>
+    <div class="age-verify-buttons">
+      <button id="age-confirm-btn" class="btn">I am 18 or older</button>
+      <button id="age-exit-btn" class="btn secondary">I am not 18</button>
+    </div>
+  </div>
+</div>
+
+<button class="to-top" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script defer src="assets/js/main.js"></script>
+</body>
+</html>
